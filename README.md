@@ -39,4 +39,4 @@ Para fazer o pedido, são necessárias três informações:
 
 - Subir o trabalho na branch com um readme.md, documentando detalhes sobre como a avaliação foi desenvolvida e como utilizar o sistema.
 
-- O prazo de entrega é até às 13h do dia 14/11 no repositório do github (https://github.com/Compass-pb-dialogflow-2021-ufms/sprint-3-dialogflow).
+- O prazo de entrega é até às 13h do dia 14/12 no repositório do github (https://github.com/Compass-pb-dialogflow-2021-ufms/sprint-3-dialogflow).
