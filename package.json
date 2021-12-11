@@ -1,0 +1,24 @@
+{
+  "name": "sprint-3-dialogflow",
+  "version": "1.0.0",
+  "description": "Terceira sprint do programa de bolsas Compass.uol para formação em chatbot Dialogflow.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Compass-pb-dialogflow-2021-ufms/sprint-3-dialogflow.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Compass-pb-dialogflow-2021-ufms/sprint-3-dialogflow/issues"
+  },
+  "homepage": "https://github.com/Compass-pb-dialogflow-2021-ufms/sprint-3-dialogflow#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.1.1"
+  }
+}
