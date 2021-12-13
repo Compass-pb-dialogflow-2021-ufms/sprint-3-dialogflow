@@ -25,7 +25,7 @@ const dialogflowFulfillment = (req,res) => {
     function qtdPizza(){
         dadosDoPedido.qtdPizzas = agent.parameters.qtdPizza;
         menuPizzas();
-        agent.add("Qual o sabor da pizza ?");
+        agent.add("Qual o sabor da 1º pizza?");
     }
     
     function pedidoPizza(){
