@@ -1,8 +1,10 @@
 const { WebhookClient } = require('dialogflow-fulfillment')
 
 const defaultWelcomeIntent = (agent) => {
-    const texto =     'Olá! Seja bem-vindo(a) a Pizzaria Tre Fratelli.\n'
-                    + 'Gostaria de fazer um pedido ou dar uma olhada no nosso cardápio ?'
+    const texto = [
+          'Olá! Seja bem-vindo(a) a Pizzaria Tre Fratelli.'
+        , 'Gostaria de fazer um pedido ou dar uma olhada no nosso cardápio ?'
+    ]
 
     agent.add(texto)
 }
