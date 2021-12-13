@@ -1,6 +1,7 @@
+require('dotenv').config()
 const express = require('express')
 const mongoose = require('mongoose')
-require('dotenv').config()
+const roteador = require('./rotas/roteador')
 
 
 const app = express()
@@ -8,10 +9,7 @@ app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 
 
-app.get('/', (req, res) =>
-{
-    res.json({message: 'Página inicial'})
-})
+app.use('/TreFratelli', roteador)
 
 
 const DB_USER = process.env.DB_USER
