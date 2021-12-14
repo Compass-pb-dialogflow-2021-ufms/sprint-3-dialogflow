@@ -40,3 +40,12 @@ Para fazer o pedido, são necessárias três informações:
 - Subir o trabalho na branch com um readme.md, documentando detalhes sobre como a avaliação foi desenvolvida e como utilizar o sistema.
 
 - O prazo de entrega é até às 13h do dia 14/12 no repositório do github (https://github.com/Compass-pb-dialogflow-2021-ufms/sprint-3-dialogflow).
+ ----
+## Desenvolvimento
+
+####<p>Inicialmente tive problemas em integrar o bot telegram, mas contornamos este problema posteriormente. Também acredito que o código ficou muito dependente da plataforma web do Dialogflow, muito por conta de utilizar o pacote dialogflow-fulfillment em vez de utilizar o payload puro, o que me limitou e trouxe algumas dificuldades.</p>
+
+## Aplicação
+
+####<p>Conversando com o bot iniciamos com uma mensagem de boas vindas, e logo podemos iniciar o nosso pedido, podendo escolher o sabor, tamanho e tipo de borda de UMA pizza, caso não seja informado esses parametros o bot irá automaticamente perguntar ao usuário, por fim também é possivel pedir uma bebida.</p>
+####<p>Então uma mensagem de confirmação de pedido é exibida e em caso afirmativo será perguntado o tipo de pagamento, que podera ser em dinheiro, crédito ou débito e será exibida uma mensagem final ao usuário reforçando o sucesso do pedido. Caso negativo uma mensagem de despedida e exibida.</p>
