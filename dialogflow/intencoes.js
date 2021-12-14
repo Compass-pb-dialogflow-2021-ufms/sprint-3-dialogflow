@@ -47,6 +47,29 @@ async function adicionarBebida(agent)
 }
 
 
+async function getMenu(agent)
+{
+    let text = '-------------------- Menu --------------------'
+
+    const pizza = await Pizza.find()
+    pizza.forEach(comestivel => {
+        const formatacao = `\n${comestivel.nome} =====> R$: ${comestivel.tamGrande}`
+        text += formatacao
+    })
+
+    const bebida = await Bebida.find()
+    bebida.forEach(drink => {
+        const formatacao = `\n${drink.nome} =====> R$: ${drink.valor}`
+        text += formatacao
+    })
+
+    const obs = '\nOBS: Todos os valores das pizzas no menu se referem ao tamanho grande'
+    text += obs
+    console.log(text)
+    agent.add(text)
+}
+
+
 function bot(req, res)
 {
     const agent = new WebhookClient({request: req, response: res})
@@ -54,6 +77,7 @@ function bot(req, res)
     let intentMap = new Map()
     intentMap.set('Adicionar sabor de pizza', adicionarPizza)
     intentMap.set('Adicionar uma bebida', adicionarBebida)
+    intentMap.set('Ver menu', getMenu)
 
     agent.handleRequest(intentMap)
 }
