@@ -10,7 +10,7 @@
 
 ### Utilizar o chatbot
 <p>Link do heroku https://pizzaria-fratelli-chatbot.herokuapp.com/. \n
-  Basta colocar o link no campo de URL Webhook na pagina de fulfillment do dialogflow, e é possivel testar no próprio console do dialogflow ou no dialogflow messenger.\n
+  Basta colocar o link no campo de URL Webhook na pagina de fulfillment do dialogflow, e é possivel testar no próprio console do dialogflow ou no dialogflow messenger.
   Abaixo esta um trecho de perguntas que segue um fluxo de funcionamento esperado.
 </P>
 
